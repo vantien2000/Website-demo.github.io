@@ -1,0 +1,22 @@
+@import "main.css";
+:root{
+    --primary-color:#ee4d2d;
+    --white-color: #fff;
+    --black-color:#000;
+    --text-color: #888888;
+    --border-color:  #e2dddd;
+    --header-height: 120px;
+    --navbar-height: 34px;
+    --header-with-search-height: calc(var(--header-height) - var(--navbar-height));
+}
+
+*{
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box; 
+}
