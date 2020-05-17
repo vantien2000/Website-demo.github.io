@@ -9,8 +9,8 @@
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <!-- custom css file -->
-    <link rel="stylesheet" href="./CSS/responsive.css">
     <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/responsive.css">
     
     
     <title>de-mo Website</title>
@@ -35,23 +35,43 @@
             </div>
             <div class="header-second">
                 <a href="" class="logo-img"><img src="./img/logo-img.png" alt="logo"></a>
+                <div class="menu-icon">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
                 <div class="header-menu-navbar">
                     <ul class="menu-navbar">
                         <li class="list-one">Home</li>
-                        <li>Service</li>
+                        <li id='menu-drop'>Service
+                                <div id="menu-dropdown" class="menu-dropdown">
+                                    <ul class="" id="dropdown-menu">
+                                        
+                                    </ul>
+                                    <ul class="" id="dropdown-menu">
+                        
+                                    </ul>
+                                    <ul class="" id="dropdown-menu">
+                                        
+                                    </ul>
+                                </div>
+                        </li>
                         <li>Project</li>
                         <li>About</li>
                         <li>Blog</li>
                         <li>Contact</li>
                     </ul>
+                    
                     <div class="icon-navbar">
                         <i class="fas fa-shopping-cart"></i>
-                        <i class="fas fa-search"></i>
+                        <input type="search" class="sbm-search" placeholder="Search" id="search">
+                        <i id="search-icon" class="fas fa-search"></i>
+                        
                     </div>
                 </div>
             </div>
             
         </nav>
+        
     </header>
     <div class="content">
         <div class="banner-section">
@@ -97,7 +117,7 @@
                 <h1>welcom you to my web</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Laudantium molestiae dolore expedita repellat</p>
             </div>
-            <div class="row">
+            <div class="row-cards row">
                 <div class="col-sm col-one">
                     <div class="card ">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique aut accusamus, commodi esse, earum blanditiis iste omnis sunt quam cumque quod nam obcaecati vitae architecto modi? Atque quasi harum commodi!</p>
@@ -139,8 +159,25 @@
                 <div class="col"><img src="./img/anh2.png" alt=""></div>
                 <div class="col"><img src="./img/anh3.png" alt=""></div>
                 <div class="col"><img src="./img/anh2.png" alt=""></div>
+            </div>
+            <div id="carouselExampleSlidesOnly" class="slide-main carousel slide" data-ride="carousel">
+                <div class="slide-content carousel-inner">
+                  <div class="carousel-item active">
+                      <img src="./img/anh1.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/anh2.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/anh3.png" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./img/anh2.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
               </div>
         </div>
+
         <div class="section-three">
             <div class="content-bonus">
                 <div class="content-one content-together">
@@ -171,7 +208,7 @@
                                 velit aperiam eveniet voluptatum! Libero, pariatur ut.</p>
                         </div>
                         
-                        <span class="bridge"></span>
+                        
                         <a href="#"><img src="./img/avatar1.jpg" alt=""></a>
                     </div>
                     <div class="messange-content messange-two col">
@@ -180,7 +217,7 @@
                                 Earum laborum voluptatem, officia eius, molestias, magni libero suscipit illum facere vitae 
                                 velit aperiam eveniet voluptatum! Libero, pariatur ut.</p>
                         </div>
-                        <span class="bridge"></span>
+                        
                         <a href="#"><img src="./img/avatar2.jpg" alt=""></a>
                     </div>
                     <div class="messange-content messange-three col">
@@ -189,7 +226,7 @@
                                 Earum laborum voluptatem, officia eius, molestias, magni libero suscipit illum facere vitae 
                                 velit aperiam eveniet voluptatum! Libero, pariatur ut.</p>
                         </div>
-                        <span class="bridge"></span>
+                        
                         <a href="#"><img src="./img/avatar3.jpg" alt=""></a>
                     </div>
                   </div>

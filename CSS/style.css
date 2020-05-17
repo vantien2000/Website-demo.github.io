@@ -91,6 +91,10 @@
 {
     border-bottom: 3px solid#75a700;
 }
+
+.menu-icon{
+    
+}
 .icon-navbar{
     display: flex;
     font-size: 18px;
@@ -229,7 +233,9 @@ a.btn-smt:hover
 {
     color: #75a700;
 }
-
+.slide-content{
+    display: none;
+}
 .row{
     width: 100%;
     padding-bottom: 60px;
@@ -257,7 +263,7 @@ a.btn-smt:hover
     text-align: left;
     width: 60%;
     margin: auto;
-    box-shadow: 0 0 1px;
+    box-shadow: 0 0 1;
 }
 .content-together img{
     width: 50%;
@@ -277,6 +283,7 @@ a.btn-smt:hover
 
 
 .messange-content-text{
+    position: relative;
     display: block;
     margin: auto;
     width: 70%;
@@ -285,28 +292,23 @@ a.btn-smt:hover
     border-radius: 30px;
     cursor: pointer;
     transition: 1s ease-in;
-}
-.messange-content-text{
     font-size: 14px;
     color: #888888;
     margin-bottom: 14px;
 }
-
-.bridge{
+.messange-content-text::after
+{
     content: "";
+    border-width: 15px 15px;
+    border-style: solid;
+    border-color: #e2dddd transparent transparent transparent;
     position: absolute;
-    display: block;
-    /* margin: auto; */
-    left: 46%;
-    top: 50%;
-    width: 30px;
-    border-top: 15px solid #e2e2e2;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    transition: 1s;
-    transform: translateY(32px);
-    cursor: pointer;
+    right: 140px;
+    top: 182px;
 }
+    
+
+
 
 .messange-content-text:hover
 {
@@ -417,3 +419,62 @@ a.sbm-send{
     padding-right: 5px;
 }
 
+/* dropdown-menu */
+#menu-drop{
+    position: relative;
+}
+
+#menu-dropdown{
+    position: absolute;
+    z-index: 1;
+    margin-top: 15px;
+    background: #fbfbfb;
+    top: 0;
+    left: 0;
+    transform: translate(-30%, 10%);
+    display: none;
+}
+.menu-dropdown::before{
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    top: 0;
+    left: 0;
+    transform: translate(80%, -35%);
+}
+
+#dropdown-menu{
+    padding: 20px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#dropdown-menu li{
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 400%;
+    transition: 0.5s;
+}
+
+#dropdown-menu li:hover{
+    border-bottom: 3px solid #8db925;
+}
+/* search */
+.sbm-search{
+    margin-left: 10px;
+    line-height: -10px;
+    align-items: center;
+    height:30px;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+    border-radius: 5px;
+    color:#888;
+    border: 1px solid #75a700;
+    transition: 1s ease-in;
+    display: none;
+}
