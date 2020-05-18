@@ -93,7 +93,7 @@
 }
 
 .menu-icon{
-    
+    visibility: hidden;
 }
 .icon-navbar{
     display: flex;
@@ -263,7 +263,7 @@ a.btn-smt:hover
     text-align: left;
     width: 60%;
     margin: auto;
-    box-shadow: 0 0 1;
+    border: 1px solid #e2e2e2;
 }
 .content-together img{
     width: 50%;

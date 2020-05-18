@@ -20,3 +20,54 @@ html{
     font-family: 'Roboto', sans-serif;
     box-sizing: border-box; 
 }
+
+@media only screen and (max-width: 700px)
+{
+    /* messange */
+    .messange-content-main{
+        padding: 10px 0px;
+    }
+    
+    .messange-content-text{
+        position: relative;
+        display: block;
+        margin: auto;
+        width: 80%;
+        margin-left: 0%;
+        padding: 20px;
+        border: 1px solid #e2dddd;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 1s ease-in;
+        font-size: 14px;
+        color: #888888;
+        margin-bottom: 14px;
+    }
+    .messange-content-text::after
+    {
+        content: "";
+        border-width: 15px 15px;
+        border-style: solid;
+        border-color: #e2dddd transparent transparent transparent;
+        position: absolute;
+        right: 140px;
+        top: 182px;
+    }
+        
+    
+    
+    
+    .messange-content-text:hover
+    {
+        background: #8db925;
+        color: #fbfbfb;
+    }
+    
+    .messange-content a img{
+        display: block;
+        width: 80px;
+        border-radius: 50%;
+        text-align: center;
+        margin: auto;
+    }
+}
